@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="25dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/RtaskDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tue"
+                android:textAlignment="center">
+            </TextView>
+
+            <TextView
+                android:id="@+id/RtaskDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="center">
+            </TextView>
+
+            <TextView
+                android:id="@+id/RtaskMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aug"
+                android:textAlignment="center">
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/RtaskTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="5dp"
+                android:text="Task Title"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/RtaskDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="5dp"
+                android:text="Task Description"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/RtaskTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:paddingStart="5dp"
+                android:text="10:35"
+                android:fontFamily="sans-serif-black"
+                android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/Rimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/item"
+            android:layout_gravity="end"
+            android:background="@color/white"
+            android:paddingTop="1dp"
+            android:layout_marginEnd="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Completed"
+            android:gravity="bottom"
+            android:layout_gravity="bottom|end"
+            android:paddingRight="2dp"
+            android:paddingBottom="2dp"/>
+    </LinearLayout>
+
+<!--    Main LinearLayout-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

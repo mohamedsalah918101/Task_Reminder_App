@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="20dp"
+    android:layout_marginHorizontal="10dp"
+    tools:context=".ui.AddTaskFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperText="max 25 character"
+        android:id="@+id/inputTask">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTaskEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="what's your task?">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/details"
+        android:layout_below="@+id/inputTask"
+        app:helperText="Optional">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/detailsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Details">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textinputdate"
+        android:layout_below="@+id/details">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Remind me on">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <ImageButton
+            android:id="@+id/chooseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/date"
+            android:background="@color/white"
+            android:layout_gravity="end">
+        </ImageButton>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textinputdate"
+        android:text="Save"
+        android:textSize="25sp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="?android:attr/colorPrimary"
+        android:layout_centerHorizontal = "true"/>
+
+</RelativeLayout>
